@@ -8,6 +8,7 @@ TagManager:
   - Canvas
   - Button
   - Weapon
+  - Background
   layers:
   - Default
   - TransparentFX
@@ -44,4 +45,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Buttons
+    uniqueID: 4099035227
     locked: 0
