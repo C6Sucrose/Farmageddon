@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 10f;
     public float lifetime = 2f;
+    public int damage = 50;
 
     void Start()
     {
@@ -19,16 +20,5 @@ public class Bullet : MonoBehaviour
         transform.Translate(Vector3.right * speed * Time.deltaTime);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        // Check if the bullet collides with an enemy or any other objects you want
-        if (other.CompareTag("Enemy"))
-        {
-            // Do something when the bullet hits an enemy
-            Destroy(other.gameObject);
-        }
-
-        // Destroy the bullet when it collides with any object
-        Destroy(gameObject);
-    }
+    
 }
