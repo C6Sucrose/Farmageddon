@@ -69,6 +69,13 @@ public class Hog : MonoBehaviour
             // Destroy the bullet
             Destroy(other.gameObject);
         }
+        else if (other.CompareTag("Aoe"))                           // Check if collider is triggered by an area of effect attack
+        {
+            Debug.Log("Explosive Hit");
+            Bullet aoe = other.GetComponent<Bullet>();
+            TakeDamage(aoe.damage);                              // Do not destroy aoe objects as their function depends on their
+                                                                    // lifetime.
+        }
         else{
             Debug.Log("Miss");
 
