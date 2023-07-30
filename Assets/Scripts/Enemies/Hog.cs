@@ -7,8 +7,7 @@ public class Hog : MonoBehaviour
 {
     public int totalHealth = 100;
     public int currentHealth;
-    public float moveSpeed = 5f;
-    public Transform target; // Reference to the object the hog should move towards
+    
     private Rigidbody2D rb;
     
 
@@ -21,12 +20,7 @@ public class Hog : MonoBehaviour
 
     void Update()
         {
-            if (target != null) // Check if a target is assigned
-            {
-                Vector2 direction = target.position - transform.position; // Calculate the direction towards the target
-                direction.Normalize(); // Normalize the direction to a unit vector
-                rb.velocity = direction * moveSpeed; // Apply movement towards the target
-            }
+            
 
            
         }
