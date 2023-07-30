@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: 28326d869bb2fc24da6e593a926f9f9c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NukeExplosion_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 922
+        width: 110
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6e3f889e932c842a0603529cf56449
+      internalID: -39338939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_1
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 908
+        width: 136
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097e9cbe858261f468b075924b41af4d
+      internalID: -1487470942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_2
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 909
+        width: 157
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405f42702b0939e42a04d9d27c30fedd
+      internalID: 490334907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_3
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 897
+        width: 191
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ccd692ba51f1d41bcdbf8cdb2d0d36
+      internalID: 94319462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_4
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 902
+        width: 163
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db68453b3cc70fc409d4dd2f8af0b7d2
+      internalID: -1255911886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 688
+        width: 175
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9577faf75a94304e8df7a066ceb5faa
+      internalID: -1030070210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_6
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 679
+        width: 199
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981348f92896f2b4790c1873b137398a
+      internalID: -1808273417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_7
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 684
+        width: 204
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d339fc542d4cb438e001a1ae0255b0
+      internalID: 1129012989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_8
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 712
+        width: 142
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68429f1cfab8394d8c009d2d965241b
+      internalID: 470959540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_9
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 714
+        width: 151
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18011367ab8c02d4984a27f914fd54f1
+      internalID: 2102851099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_10
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 483
+        width: 175
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc277b3348278694abaae8e40078dfa1
+      internalID: 725254807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_11
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 482
+        width: 189
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b25db826bda8448900b3580f8c2e48
+      internalID: -1941695559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_12
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 482
+        width: 191
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9347e423d3ea21249a3e7306729a3821
+      internalID: -1312356294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_13
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 483
+        width: 207
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467412695dee59545a4c3fb5582b4a83
+      internalID: -1319530419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_14
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 482
+        width: 224
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb98687e478ae541a0faad2a0be904a
+      internalID: 1411405052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_15
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 252
+        width: 227
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ec70f3c384aaa49a636b247fa974b9
+      internalID: -1554250241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_16
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 251
+        width: 247
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b464bb760c04bc24bb36afe2df650b7b
+      internalID: -209016603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_17
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 253
+        width: 252
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a182d4a61e8a24585cd2a1b66a2c74
+      internalID: 1960765184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_18
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 255
+        width: 262
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f7d5f96077a5c4a8d00065dbafcd22
+      internalID: -2082663986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_19
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 257
+        width: 280
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c260291fc8dd8e4c81c5c257c7b4597
+      internalID: 1916001220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_20
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 25
+        width: 278
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe2e592057478149b11cd17c983a6a3
+      internalID: -588535813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_26
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 22
+        width: 291
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042cf5173c4519c4bb833dea7e739438
+      internalID: -1184195061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_76
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 8
+        width: 283
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c34ededde5e20341a5f4e2639578b76
+      internalID: -833217088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NukeExplosion_112
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 12
+        width: 297
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d91dfa775672345a12ea02e58948c6
+      internalID: 513926800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      NukeExplosion_0: -39338939
+      NukeExplosion_1: -1487470942
+      NukeExplosion_10: 725254807
+      NukeExplosion_100: 1055365167
+      NukeExplosion_101: 1711361925
+      NukeExplosion_102: -1661987198
+      NukeExplosion_103: -2035340127
+      NukeExplosion_104: 577376558
+      NukeExplosion_105: 603820640
+      NukeExplosion_106: 523807452
+      NukeExplosion_107: 1457757103
+      NukeExplosion_108: 278859754
+      NukeExplosion_109: 1079050701
+      NukeExplosion_11: -1941695559
+      NukeExplosion_110: 1626658303
+      NukeExplosion_111: -746811508
+      NukeExplosion_112: 513926800
+      NukeExplosion_113: -1337290767
+      NukeExplosion_114: 1529027495
+      NukeExplosion_115: -997444970
+      NukeExplosion_116: 1225090736
+      NukeExplosion_117: 1829904812
+      NukeExplosion_118: -815887557
+      NukeExplosion_119: 818179351
+      NukeExplosion_12: -1312356294
+      NukeExplosion_120: -375589857
+      NukeExplosion_121: 161643622
+      NukeExplosion_122: 353808824
+      NukeExplosion_123: 1754038518
+      NukeExplosion_124: 49081923
+      NukeExplosion_13: -1319530419
+      NukeExplosion_14: 1411405052
+      NukeExplosion_15: -1554250241
+      NukeExplosion_16: -209016603
+      NukeExplosion_17: 1960765184
+      NukeExplosion_18: -2082663986
+      NukeExplosion_19: 1916001220
+      NukeExplosion_2: 490334907
+      NukeExplosion_20: -588535813
+      NukeExplosion_21: -1868601751
+      NukeExplosion_22: -1300023092
+      NukeExplosion_23: -2055933262
+      NukeExplosion_24: 708687150
+      NukeExplosion_25: -1133626510
+      NukeExplosion_26: -1184195061
+      NukeExplosion_27: 114326338
+      NukeExplosion_28: 345456983
+      NukeExplosion_29: -45431853
+      NukeExplosion_3: 94319462
+      NukeExplosion_30: -108158180
+      NukeExplosion_31: 527673890
+      NukeExplosion_32: -531666696
+      NukeExplosion_33: -2144164455
+      NukeExplosion_34: -233708760
+      NukeExplosion_35: 488969119
+      NukeExplosion_36: -471765873
+      NukeExplosion_37: 528392286
+      NukeExplosion_38: -1096861963
+      NukeExplosion_39: -787432192
+      NukeExplosion_4: -1255911886
+      NukeExplosion_40: 1541378557
+      NukeExplosion_41: -1829385124
+      NukeExplosion_42: -1703811606
+      NukeExplosion_43: 1189523907
+      NukeExplosion_44: 36531197
+      NukeExplosion_45: -1560264906
+      NukeExplosion_46: -630078990
+      NukeExplosion_47: 1682826932
+      NukeExplosion_48: -87069041
+      NukeExplosion_49: 133293806
+      NukeExplosion_5: -1030070210
+      NukeExplosion_50: -241586941
+      NukeExplosion_51: -963555463
+      NukeExplosion_52: -1700522992
+      NukeExplosion_53: 422834307
+      NukeExplosion_54: -380914425
+      NukeExplosion_55: 58126799
+      NukeExplosion_56: -124520678
+      NukeExplosion_57: 1974383569
+      NukeExplosion_58: 2028710998
+      NukeExplosion_59: 265846820
+      NukeExplosion_6: -1808273417
+      NukeExplosion_60: -1219736971
+      NukeExplosion_61: 255744163
+      NukeExplosion_62: -957178990
+      NukeExplosion_63: -525184948
+      NukeExplosion_64: 1509212668
+      NukeExplosion_65: -1666847762
+      NukeExplosion_66: -1965885179
+      NukeExplosion_67: -455292837
+      NukeExplosion_68: -1019118575
+      NukeExplosion_69: 1431960977
+      NukeExplosion_7: 1129012989
+      NukeExplosion_70: 1930641553
+      NukeExplosion_71: -1824126078
+      NukeExplosion_72: 8722517
+      NukeExplosion_73: 1267851099
+      NukeExplosion_74: 40986912
+      NukeExplosion_75: 1561762170
+      NukeExplosion_76: -833217088
+      NukeExplosion_77: -2024090535
+      NukeExplosion_78: 1634233200
+      NukeExplosion_79: 2116565593
+      NukeExplosion_8: 470959540
+      NukeExplosion_80: 481828475
+      NukeExplosion_81: 820867168
+      NukeExplosion_82: -92899299
+      NukeExplosion_83: -264834916
+      NukeExplosion_84: -1793148756
+      NukeExplosion_85: 1739782891
+      NukeExplosion_86: 1527405292
+      NukeExplosion_87: 1695378142
+      NukeExplosion_88: 1664757343
+      NukeExplosion_89: -716117950
+      NukeExplosion_9: 2102851099
+      NukeExplosion_90: -1758316284
+      NukeExplosion_91: 1276579592
+      NukeExplosion_92: -2040391999
+      NukeExplosion_93: 418837758
+      NukeExplosion_94: -1580377203
+      NukeExplosion_95: -1893734214
+      NukeExplosion_96: -1464025365
+      NukeExplosion_97: -1349261975
+      NukeExplosion_98: 1254247590
+      NukeExplosion_99: -922091651
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
