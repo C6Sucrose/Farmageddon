@@ -7,7 +7,6 @@ public class Hog : MonoBehaviour
 {
     public int totalHealth = 100;
     public int currentHealth;
-    
     public int hogdamage = 50;
     private Rigidbody2D rb;
     
