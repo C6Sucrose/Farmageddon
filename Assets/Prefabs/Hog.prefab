@@ -164,6 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalHealth: 100
   currentHealth: 0
+  doDamage: 10
 --- !u!114 &6153363711764521145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,3 +177,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d750dd3122948464684082e626171be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 5
