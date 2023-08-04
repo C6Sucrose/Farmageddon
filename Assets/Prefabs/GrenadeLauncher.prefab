@@ -107,7 +107,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -842017964, guid: 9c6f734ece2469d4eac1b4eeca20a917, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bbd9b682bb06f984193ae4917f52b47c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -147,7 +147,8 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 5458830859668140607}
   bulletSpeed: 10
   aimSpeed: 2
-  fireRate: 0.5
+  fireRate: 2
   nextFireTime: 0
   minRotation: -60
   maxRotation: 60
+  variables: {fileID: 0}
