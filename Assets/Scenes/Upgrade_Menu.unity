@@ -154,8 +154,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponUpgradeButton: {fileID: 2032573340}
-  weapon1UpgradeLevel: 0
-  weapon2UpgradeLevel: 0
   spriteArray:
   - {fileID: 21300000, guid: 9e566fd2e8007304e9814722e66be6bc, type: 3}
   - {fileID: 577305447, guid: 9c6f734ece2469d4eac1b4eeca20a917, type: 3}
@@ -1451,7 +1449,7 @@ SpriteRenderer:
   m_SortingLayerID: -195932069
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3d6714cb85f76764da4f81bc710abcae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 57cbf17f56b908041a177bd4ea5a9b62, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
