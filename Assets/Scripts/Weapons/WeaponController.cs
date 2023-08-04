@@ -12,11 +12,21 @@ public class WeaponController : MonoBehaviour
     public float nextFireTime = 0f;
     public float minRotation = 45f;
     public float maxRotation = 135f;
+    public variables_script variables;
+
+
 
 
 
 
     //FOR PC
+
+    public void Start()
+    {
+        
+    }
+
+
     public void Update()
     {
         if (Input.GetButtonDown("Fire1") && Time.time >= nextFireTime)
