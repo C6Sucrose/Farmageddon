@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 8399321271693398362}
   - component: {fileID: 6381576229974976035}
   - component: {fileID: 1633290648527071689}
+  - component: {fileID: 6805859401206102541}
   m_Layer: 0
   m_Name: NukeWeapon
   m_TagString: Weapon
@@ -152,3 +153,20 @@ MonoBehaviour:
   minRotation: 0
   maxRotation: 0
   variables: {fileID: 0}
+  ammoSystem: {fileID: 6805859401206102541}
+--- !u!114 &6805859401206102541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5731655964107749864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79995e6851ec20b448a538a97e12fb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLimited: 1
+  refillTime: 5
+  maxAmmo: 1
+  currentAmmo: 0

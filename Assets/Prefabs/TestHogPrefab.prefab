@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7580538101342482136}
   - component: {fileID: 7544771560473585969}
   - component: {fileID: 4191243856096829852}
+  - component: {fileID: 6075518709074697735}
   m_Layer: 0
   m_Name: TestHogPrefab
   m_TagString: Enemy
@@ -163,5 +164,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalHealth: 100
   currentHealth: 0
-  moveSpeed: 1
-  target: {fileID: 0}
+  hogdamage: 50
+--- !u!114 &6075518709074697735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4951208465339244977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1567a11d6e3cf43a56ab07f764e976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inc: 20

@@ -10,6 +10,8 @@ public class Rifle : MonoBehaviour
 {
     public WeaponController weaponController;
     
+    
+    
     private void Update()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -24,10 +26,11 @@ public class Rifle : MonoBehaviour
 // public class Rifle : MonoBehaviour
 // {
 //     public WeaponController weaponController;
+//     public AmmoSystem ammoSystem;
     
 //     private void Update()
 //     {
-//         if (Input.touchCount > 0)
+//         if (Input.touchCount > 0 && (ammoSystem.UseAmmo() == true))
 //         {
 //             weaponController.Update();
 //         }
