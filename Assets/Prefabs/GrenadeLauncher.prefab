@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 3942209931725588414}
   - component: {fileID: -6059650667574876840}
   - component: {fileID: -5261433435941478628}
+  - component: {fileID: 6507562784816345413}
   m_Layer: 0
   m_Name: GrenadeLauncher
   m_TagString: Weapon
@@ -152,3 +153,20 @@ MonoBehaviour:
   minRotation: -60
   maxRotation: 60
   variables: {fileID: 0}
+  ammoSystem: {fileID: 6507562784816345413}
+--- !u!114 &6507562784816345413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6059156129774641615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79995e6851ec20b448a538a97e12fb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLimited: 1
+  refillTime: 5
+  maxAmmo: 10
+  currentAmmo: 0

@@ -13,6 +13,7 @@ public class WeaponController : MonoBehaviour
     public float minRotation = 45f;
     public float maxRotation = 135f;
     public variables_script variables;
+    public AmmoSystem ammoSystem;
 
 
 
@@ -29,27 +30,30 @@ public class WeaponController : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetButtonDown("Fire1") && Time.time >= nextFireTime)
+        if (Input.GetButtonDown("Fire1") && Time.time >= nextFireTime  && (ammoSystem.currentAmmo > 0))
         {
             Fire();
-        
+
+            
         }
+        
 
-        // Get the mouse position
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            // Get the mouse position
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        // Get the direction from the rifle to the mouse
-        Vector2 direction = mousePosition - (Vector2)transform.position;
+            // Get the direction from the rifle to the mouse
+            Vector2 direction = mousePosition - (Vector2)transform.position;
 
-        // Calculate the angle from the direction
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            // Calculate the angle from the direction
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
        
-        if(angle >= minRotation && angle <= maxRotation)
-        {
-        // Rotate the rifle to point towards the mouse
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), aimSpeed * Time.deltaTime);
-        }
+            if(angle >= minRotation && angle <= maxRotation)
+            {
+                // Rotate the rifle to point towards the mouse
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, angle), aimSpeed * Time.deltaTime);
+            }
+        
 
     }
 
@@ -57,7 +61,7 @@ public class WeaponController : MonoBehaviour
     {
 
         nextFireTime = Time.time + fireRate;
-
+        ammoSystem.UseAmmo();
         // Instantiate a bullet at the rifle's position
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
     }
