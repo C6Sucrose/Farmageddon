@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - Background
   - Aoe
+  - bar
   layers:
   - Default
   - TransparentFX
