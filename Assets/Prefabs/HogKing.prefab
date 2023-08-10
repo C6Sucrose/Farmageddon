@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6077491181002860114}
   - component: {fileID: 2627269911479751312}
   - component: {fileID: 3322260663545259018}
+  - component: {fileID: 1062029664757587681}
+  - component: {fileID: 8583302898812826672}
   m_Layer: 0
   m_Name: HogKing
   m_TagString: Enemy
@@ -165,6 +167,36 @@ MonoBehaviour:
   totalHealth: 500
   currentHealth: 0
   hogdamage: 50
+--- !u!114 &1062029664757587681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2384358074409316860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ac6aac4fadac34583a6d098090f7dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 6653086610122017652, guid: 3474729d10bca11429a50566ec6c88cf, type: 3}
+  spawnInterval: 1
+  spawnCount: 10
+  spawnDuration: 10
+  targetTransform: {fileID: 0}
+--- !u!114 &8583302898812826672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2384358074409316860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1567a11d6e3cf43a56ab07f764e976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inc: 500
 --- !u!1 &3662549725131244769
 GameObject:
   m_ObjectHideFlags: 0

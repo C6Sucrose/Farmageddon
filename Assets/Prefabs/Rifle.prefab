@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 2962605358075284422}
   - component: {fileID: 6747369535354979847}
   - component: {fileID: 8201360249273393873}
+  - component: {fileID: 2333782672898461039}
   m_Layer: 0
   m_Name: Rifle
   m_TagString: Weapon
@@ -100,6 +101,7 @@ MonoBehaviour:
   minRotation: -45
   maxRotation: 45
   variables: {fileID: 0}
+  ammoSystem: {fileID: 2333782672898461039}
 --- !u!212 &8201360249273393873
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -152,3 +154,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2333782672898461039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4163069284006514865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79995e6851ec20b448a538a97e12fb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLimited: 1
+  refillTime: 4
+  maxAmmo: 2
+  currentRefillTime: 0
+  currentAmmo: 0

@@ -4,127 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-// public class UpgradeScene : MonoBehaviour
-// {
-    
-//     //public GameObject weaponimg;
-//     public Button weaponUpgradeButton;
-//     //public SwitchWeapons switchweapons;
-    
-//     private int upgrade_level;
-    
-//     public const int maxUpgrades = 2;
-    
-//     private void Start()
-//     {
-//         upgrade_level = 1;
-//         UpdateUpgradeButtons();
-//     }
-    
-//     public void UpgradeWeapon()
-//     {
-//         if (upgrade_level < maxUpgrades)
-//         {
-//             upgrade_level++;
-//             UpdateUpgradeButtons();
-//         }
-//         else
-//         {
-//             Debug.Log("Not Upgradable anymore");
-//         }
-//     }
-    
-//     private void UpdateUpgradeButtons()
-//     {
-//         // Update weapon image
-        
-//         // Update fire rate upgrade button
-//         if (upgrade_level < maxUpgrades)
-//         {
-//             //switchweapons = GameObject.Find("WeaponSpawnPoint").GetComponent<SwitchWeapons>();
-//             //switchweapons.ReplaceWeapon(upgrade_level, upgrade_level);
-            
-//             //weaponimg.GetComponent<SpriteRenderer>().sprite = switchweapons.weapons[upgrade_level].GetComponent<SpriteRenderer>().sprite;
-//             weaponUpgradeButton.interactable = true;
-        
-//             Debug.Log("upgraded");
-//         }
-//         else
-//         {
-//             weaponUpgradeButton.interactable = false;
-//             Debug.Log("Not Upgradable anymore");
-//         }
-
-//         //SceneManager.UnloadSceneAsync(level);
-//     }
-// }
-
-
-
-// public class UpgradeScene : MonoBehaviour
-// {
-//     public Button weaponUpgradeButton;
-
-
-//     public int weapon1UpgradeLevel;
-//     public int weapon2UpgradeLevel;
-//     public Sprite[] spriteArray;
-
-//     public const int maxUpgrades = 2;
-
-//     private void Start()
-//     {
-//         weapon1UpgradeLevel = 0;
-//         weapon2UpgradeLevel = 0;
-//         UpdateUpgradeButtons();
-//     }
-
-//     public void UpgradeWeapon1()
-//     {
-//         if (weapon1UpgradeLevel < maxUpgrades)
-//         {
-//             weapon1UpgradeLevel++;
-//             UpdateUpgradeButtons();
-//         }
-//         else
-//         {
-//             Debug.Log("Weapon 1: Not Upgradable anymore");
-//         }
-//     }
-
-//     public void UpgradeWeapon2()
-//     {
-//         if (weapon2UpgradeLevel < maxUpgrades)
-//         {
-//             weapon2UpgradeLevel++;
-//             UpdateUpgradeButtons();
-//         }
-//         else
-//         {
-//             Debug.Log("Weapon 2: Not Upgradable anymore");
-//         }
-//     }
-
-//     private void UpdateUpgradeButtons()
-//     {
-//         if (weapon1UpgradeLevel < maxUpgrades)
-//         {
-//             weaponUpgradeButton.interactable = true;
-//             Debug.Log("Weapon : Upgraded");
-//         }
-//         else
-//         {
-//             weaponUpgradeButton.interactable = false;
-//             Debug.Log("Weapon : Not Upgradable anymore");
-//         }
-
-        
-
-        
-//     }
-// }
-
-
 public class UpgradeScene : MonoBehaviour
 {
     public Button weaponUpgradeButton;
@@ -140,8 +19,18 @@ public class UpgradeScene : MonoBehaviour
     private void Start()
     {
         UpdateUpgradeButtons();
-        currentIndex = weapon1UpgradeLevel;
+        
+        PlayerPrefs.DeleteKey("weapon1UpgradeLevel");
+        if(PlayerPrefs.HasKey("weapon1UpgradeLevel")){//if upgrades exist
+            weapon1UpgradeLevel = PlayerPrefs.GetInt("weapon1UpgradeLevel"); 
+        }
+        else
+        {
+            weapon1UpgradeLevel = 0;
 
+        }
+        currentIndex = weapon1UpgradeLevel;
+        weapon2UpgradeLevel = weapon1UpgradeLevel;
         spriteObject = new GameObject();
         spriteObject.transform.position = new Vector2(0f, 0f);
 
@@ -153,34 +42,9 @@ public class UpgradeScene : MonoBehaviour
         Debug.Log(weapon1UpgradeLevel);
     }
 
-    public void UpgradeWeapon1()
-    {
-        if (weapon1UpgradeLevel < maxUpgrades)
-        {
-            weapon1UpgradeLevel++;
-            UpdateUpgradeButtons();
-        }
-        else
-        {
-            Debug.Log("Weapon 1: Not Upgradable anymore");
-        }
-    }
-
-    public void UpgradeWeapon2()
-    {
-        if (weapon2UpgradeLevel < maxUpgrades)
-        {
-            weapon2UpgradeLevel++;
-            UpdateUpgradeButtons();
-        }
-        else
-        {
-            Debug.Log("Weapon 2: Not Upgradable anymore");
-        }
-    }
-
     private void UpdateUpgradeButtons()
     {
+        
         if (weapon1UpgradeLevel < maxUpgrades)
         {
             weaponUpgradeButton.interactable = true;
@@ -195,15 +59,60 @@ public class UpgradeScene : MonoBehaviour
 
     private void ChangeSprite()
     {
-        if(currentIndex < 2)
+        if(weapon1UpgradeLevel < maxUpgrades)
         {
-            currentIndex++;
-        }
+            
+            switch (CurrencyHandler.currentCurrency)
+            {
+                case var x when x >= 8000:
+                    // Code to handle the case where currencyValue is greater than or equal to 8000
+                    Debug.Log("Currency value is greater than or equal to 8000");
+                    if(weapon1UpgradeLevel == 0)
+                    {
+                        weapon1UpgradeLevel += 2;
+                        weapon2UpgradeLevel += 2;
+                        CurrencyHandler.currentCurrency -= 8000;          
+                        // Save the updated upgrade value to PlayerPrefs
+                        PlayerPrefs.SetInt("weapon1UpgradeLevel", weapon1UpgradeLevel);
+                        PlayerPrefs.Save();        
+                    }
+                    else
+                    {
+                        weapon1UpgradeLevel++;
+                        weapon2UpgradeLevel++;
+                        CurrencyHandler.currentCurrency -= 8000;
+                        // Save the updated upgrade value to PlayerPrefs
+                        PlayerPrefs.SetInt("weapon1UpgradeLevel", weapon1UpgradeLevel);
+                        PlayerPrefs.Save();                 
+                    }
+                    currentIndex = weapon1UpgradeLevel;
+                    spriteRenderer.sprite = spriteArray[currentIndex];
+                    break;
+
+                case var x when x >= 2500 && x < 8000:
+                    // Code to handle the case where currencyValue is greater than or equal to 2500 and less than 8000
+                    Debug.Log("Currency value is greater than or equal to 2500 and less than 8000");
+                    if(weapon1UpgradeLevel == 0)
+                    {
+                        weapon1UpgradeLevel++;
+                        weapon2UpgradeLevel++;
+                        CurrencyHandler.currentCurrency -= 2500;
+                        currentIndex = weapon1UpgradeLevel;
+                        // Save the updated upgrade value to PlayerPrefs
+                        PlayerPrefs.SetInt("weapon1UpgradeLevel", weapon1UpgradeLevel);
+                        PlayerPrefs.Save(); 
+                    }
+
+                    spriteRenderer.sprite = spriteArray[currentIndex];
+                    break;
+
+                default:
+                    // Code to handle the default case (when currencyValue is less than 2500)
+                    Debug.Log("Currency value is less than 2500");
+                    break;
+            }
         
-        if (currentIndex >= spriteArray.Length)
-        {
-            currentIndex = weapon1UpgradeLevel;
+            
         }
-        spriteRenderer.sprite = spriteArray[currentIndex];
     }
 }
