@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class farm : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class farm : MonoBehaviour
     public int currentHealth;
    // public int hogdamage = 50;
     private Rigidbody2D rb;
-
+    public corn Bar;
+  
 
     void Start()
     {
@@ -37,6 +39,11 @@ public class farm : MonoBehaviour
         {
             Die();
         }
+       // GameObject.FindGameObjectsWithTag("bar");
+       
+        //transform.position = new Vector2(transform.position.x - 1f, transform.position.y);
+        //bar Bar = other.GetComponent<bar>();
+         Bar.decreasescale();
     }
 
     // Handle enemy death logic here
@@ -59,6 +66,7 @@ public class farm : MonoBehaviour
 
             // Damage the hog based on the bullet's damage value
             TakeDamage(hog.hogdamage);
+            
         }
         //else if (other.CompareTag("Aoe"))                           // Check if collider is triggered by an area of effect attack
         //{
