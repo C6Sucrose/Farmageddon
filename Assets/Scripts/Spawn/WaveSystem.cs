@@ -18,7 +18,7 @@ public class WaveSystem : MonoBehaviour
     public enum SpawnState { Spawn, Wait, Count };
     private SpawnState state =  SpawnState.Count;
     public Transform[] spawnPoints;
-    public Transform target;
+   // public Transform target;
     public Transform bossSpawnPoint;
 
     public Wave[] waves;
@@ -98,12 +98,12 @@ public class WaveSystem : MonoBehaviour
     {
         Transform spawn = spawnPoints[Random.Range(0, spawnPoints.Length)];
         Transform _enemy = Instantiate(enemy, spawn.position, spawn.rotation);
-        EnemyMovement enemyMovement = enemy.GetComponent<EnemyMovement>();
+      /*  EnemyMovement enemyMovement = enemy.GetComponent<EnemyMovement>();
 
         if (enemyMovement != null)
         {
             enemyMovement.target = this.target;
-        }
+        } */
 
         Debug.Log("Spawned Enemy");
     }

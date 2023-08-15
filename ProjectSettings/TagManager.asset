@@ -13,6 +13,7 @@ TagManager:
   - Background
   - Aoe
   - bar
+  - Farm
   layers:
   - Default
   - TransparentFX
