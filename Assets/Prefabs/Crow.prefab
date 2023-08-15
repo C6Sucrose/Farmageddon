@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2384358074409316860
+--- !u!1 &2995774570903372082
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 466921123981196469}
-  - component: {fileID: 4508009457397009806}
-  - component: {fileID: 6077491181002860114}
-  - component: {fileID: 2627269911479751312}
-  - component: {fileID: 3322260663545259018}
-  - component: {fileID: 9123016839064386564}
+  - component: {fileID: 6002622805638259730}
+  - component: {fileID: 3711576897410329176}
+  - component: {fileID: 1534960808168375815}
+  - component: {fileID: 3598421001974971445}
+  - component: {fileID: 3077265323433977265}
+  - component: {fileID: 7116415740865801473}
   m_Layer: 0
-  m_Name: HogKing
+  m_Name: Crow
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &466921123981196469
+--- !u!4 &6002622805638259730
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2384358074409316860}
+  m_GameObject: {fileID: 2995774570903372082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.78, y: -2.81, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalPosition: {x: 5.67, y: -0.32, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1116840646513370272}
+  - {fileID: 7250580072759390347}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4508009457397009806
+--- !u!212 &3711576897410329176
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2384358074409316860}
+  m_GameObject: {fileID: 2995774570903372082}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -78,25 +78,59 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2f658da184f201d4dbda98ee59b7efd8, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.12, y: 6.12}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &6077491181002860114
+--- !u!114 &1534960808168375815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995774570903372082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0e4c2f15071be47ae15990f86697e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  targetTag: Farm
+  detectionRadius: 25
+  fireRadius: 5
+  ammo: {fileID: 7490798250994469474, guid: 2e11bdf48715a204b967b664c0ac370a, type: 3}
+  ammoSpawn: {fileID: 7250580072759390347}
+  fireRate: 2
+--- !u!114 &3598421001974971445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995774570903372082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8019dbdad45cb40bbf632b76f7aa63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalHealth: 100
+  currentHealth: 0
+  hogdamage: 50
+--- !u!50 &3077265323433977265
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2384358074409316860}
+  m_GameObject: {fileID: 2995774570903372082}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -115,14 +149,14 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!70 &2627269911479751312
+  m_Constraints: 0
+--- !u!70 &7116415740865801473
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2384358074409316860}
+  m_GameObject: {fileID: 2995774570903372082}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -148,38 +182,10 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.12878108, y: -0.11160958}
-  m_Size: {x: 3.6302476, y: 3.6302478}
+  m_Offset: {x: 0.02878666, y: 0.05300826}
+  m_Size: {x: 1.2878628, y: 1.3166502}
   m_Direction: 0
---- !u!114 &3322260663545259018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2384358074409316860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe8019dbdad45cb40bbf632b76f7aa63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalHealth: 500
-  currentHealth: 0
-  hogdamage: 50
---- !u!114 &9123016839064386564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2384358074409316860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd1567a11d6e3cf43a56ab07f764e976, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inc: 500
---- !u!1 &3662549725131244769
+--- !u!1 &4760288801653614140
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,43 +193,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1116840646513370272}
-  - component: {fileID: 6518800588354187696}
+  - component: {fileID: 7250580072759390347}
   m_Layer: 0
-  m_Name: SpawnPoint
+  m_Name: AmmoSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1116840646513370272
+--- !u!4 &7250580072759390347
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3662549725131244769}
+  m_GameObject: {fileID: 4760288801653614140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 0}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 466921123981196469}
+  m_Father: {fileID: 6002622805638259730}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6518800588354187696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3662549725131244769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5ac6aac4fadac34583a6d098090f7dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Prefab: {fileID: 6727179918839903245, guid: 9dbca33a6321185458f48c34723eef7a, type: 3}
-  spawnInterval: 3
-  spawnCount: 10
-  spawnDuration: 10

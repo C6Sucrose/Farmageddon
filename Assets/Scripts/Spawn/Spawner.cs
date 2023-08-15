@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
     private int currentSpawnCount;  // Counter for the number of enemies spawned
     private float spawnTimer;  // Timer for enemy spawning
 
-    public Transform targetTransform;  // The target for the enemy to go towards
+    // public Transform targetTransform;  // The target for the enemy to go towards
     
     private void Start()
     {
@@ -39,13 +39,13 @@ public class Spawner : MonoBehaviour
     private void SpawnEnemy()
     {
         GameObject enemy = Instantiate(Prefab, transform.position, Quaternion.identity);
-        EnemyMovement enemyMovement = enemy.GetComponent<EnemyMovement>();
+      /*  EnemyMovement enemyMovement = enemy.GetComponent<EnemyMovement>();
 
         if (enemyMovement != null)
             {
                 enemyMovement.target = targetTransform;
             }
 
-
+        */
     }
 }
