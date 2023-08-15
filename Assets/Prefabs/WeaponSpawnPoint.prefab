@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5900355699509281244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1007504333422129184}
+  - component: {fileID: 5344327527100343831}
+  - component: {fileID: 2390146482896015584}
+  m_Layer: 0
+  m_Name: WeaponSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1007504333422129184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5900355699509281244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5344327527100343831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5900355699509281244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ba67fc28d6a9604c93a9df6ac07c904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 4163069284006514865, guid: 798be45db394f2840afd25843489077f, type: 3}
+  - {fileID: 6059156129774641615, guid: ee08bda75ddde774faba438c30e0cae8, type: 3}
+  - {fileID: 5731655964107749864, guid: cb61140f5213c714794cec223af0d419, type: 3}
+  GrenadeUpgrades:
+  - {fileID: 6059156129774641615, guid: ee08bda75ddde774faba438c30e0cae8, type: 3}
+  - {fileID: 6059156129774641615, guid: 8bac4b17c6d6a724aa68cc7a8fe43f18, type: 3}
+  - {fileID: 6059156129774641615, guid: 04f48ece16834914ead39285546f7ab8, type: 3}
+  RifleUpgrades:
+  - {fileID: 4163069284006514865, guid: 798be45db394f2840afd25843489077f, type: 3}
+  - {fileID: 4163069284006514865, guid: 24c07e9101e113f49a5cefbe41406b83, type: 3}
+  - {fileID: 4163069284006514865, guid: 50c9ecb375713c54393bce0e22e9024f, type: 3}
+  su: {fileID: 2390146482896015584}
+  weaponSpawnPoint: {fileID: 1007504333422129184}
+  current_index: 0
+  replace_index: 0
+--- !u!114 &2390146482896015584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5900355699509281244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bcf5c06d10ca0b43b8a8460f318e5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  us: {fileID: 0}
+  w1ul: 0
+  w2ul: 0
