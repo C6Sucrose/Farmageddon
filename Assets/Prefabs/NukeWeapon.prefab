@@ -50,7 +50,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9026076244294190026
 Transform:
   m_ObjectHideFlags: 0
@@ -60,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 5731655964107749864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.86, y: -0.2, z: 0}
-  m_LocalScale: {x: 0.07916832, y: 0.06741673, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 314789649738917749}
@@ -169,4 +169,5 @@ MonoBehaviour:
   isLimited: 1
   refillTime: 5
   maxAmmo: 1
+  currentRefillTime: 0
   currentAmmo: 0

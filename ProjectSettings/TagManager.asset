@@ -13,6 +13,7 @@ TagManager:
   - Background
   - Aoe
   - bar
+  - Weather
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Background
   - 
   - 
   - 
@@ -47,8 +48,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1767666675
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Torch
+    uniqueID: 721473059
     locked: 0
   - name: Buttons
     uniqueID: 4099035227

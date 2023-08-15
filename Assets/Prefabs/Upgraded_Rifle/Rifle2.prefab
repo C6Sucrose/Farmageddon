@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 2962605358075284422}
   - component: {fileID: 6747369535354979847}
   - component: {fileID: 8201360249273393873}
+  - component: {fileID: 8921318577567672370}
   m_Layer: 0
   m_Name: Rifle2
   m_TagString: Weapon
@@ -59,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 4163069284006514865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 281113186214445647}
@@ -100,6 +101,7 @@ MonoBehaviour:
   minRotation: -45
   maxRotation: 45
   variables: {fileID: 0}
+  ammoSystem: {fileID: 8921318577567672370}
 --- !u!212 &8201360249273393873
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -152,3 +154,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8921318577567672370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4163069284006514865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79995e6851ec20b448a538a97e12fb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLimited: 0
+  refillTime: 2
+  maxAmmo: 5
+  currentRefillTime: 0
+  currentAmmo: 0
