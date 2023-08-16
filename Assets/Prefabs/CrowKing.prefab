@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 2996630608466780435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.34, y: -0.23, z: 0}
-  m_LocalScale: {x: 2.3590426, y: 2.0192096, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7877363286958748297}
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.05660379, g: 0.050462812, b: 0.050462812, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   speed: 1
   ammo: {fileID: 7490798250994469474, guid: 2e11bdf48715a204b967b664c0ac370a, type: 3}
   ammoSpawn: {fileID: 7877363286958748297}
-  fireRate: 2
+  fireRate: 3
 --- !u!114 &3122914386465332556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe8019dbdad45cb40bbf632b76f7aa63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalHealth: 500
+  totalHealth: 2000
   currentHealth: 0
   hogdamage: 50
 --- !u!70 &7080159631385629613

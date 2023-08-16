@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaveSystem : MonoBehaviour
 {
@@ -123,7 +124,7 @@ public class WaveSystem : MonoBehaviour
         
         if (nextWave + 1 > waves.Length - 1)
         {
-            nextWave = 0;
+            SceneManager.LoadScene("Win");
             Debug.Log("All waves finished, restarting");
         }
         else
