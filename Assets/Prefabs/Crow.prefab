@@ -30,12 +30,12 @@ Transform:
   m_GameObject: {fileID: 2995774570903372082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.67, y: -0.32, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7250580072759390347}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3711576897410329176
 SpriteRenderer:
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.066037714, g: 0.05077428, b: 0.05077428, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -101,13 +101,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b0e4c2f15071be47ae15990f86697e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 6
   targetTag: Farm
-  detectionRadius: 25
-  fireRadius: 5
+  fireRadius: 35
   ammo: {fileID: 7490798250994469474, guid: 2e11bdf48715a204b967b664c0ac370a, type: 3}
   ammoSpawn: {fileID: 7250580072759390347}
-  fireRate: 2
+  fireRate: 4
 --- !u!114 &3598421001974971445
 MonoBehaviour:
   m_ObjectHideFlags: 0

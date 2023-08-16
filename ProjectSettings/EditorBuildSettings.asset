@@ -30,6 +30,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Oppenheimer.unity
     guid: 77132505f5b3f7c4b930adc5e83ec1d7
   - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: 213c07a92990d274db74276cae3a8016
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: c8fbe4ac8f5f42c4e95d67b2ad98fc3a
+  - enabled: 1
     path: Assets/Scenes/Upgrade_Menu.unity
     guid: 52572275e7ca047439ac1c167e4690f9
   m_configObjects: {}

@@ -19,7 +19,7 @@ public class CrowKingAi : MonoBehaviour
 
     void PositionChange()
     {
-        newPosition = new Vector2(Random.Range(-5.0f, 5.0f), Random.Range(-5.0f, 5.0f));
+        newPosition = new Vector2(Random.Range(0f, 30f), Random.Range(0f, 30f));
     }
 
     void Update()
