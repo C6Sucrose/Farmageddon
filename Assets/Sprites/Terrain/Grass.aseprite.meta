@@ -121,15 +121,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Grass
     originalName: 
-    pivot: {x: 0.49206352, y: 0}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 63
-      height: 55
+      width: 64
+      height: 57
     spriteID: 892dcaae57a73474b84edf0c0b997df4
     spriteBone: []
     spriteOutline: []
@@ -151,10 +151,10 @@ ScriptedImporter:
     - name: Grass
       frameIndex: 0
       cellRect:
-        x: 1
+        x: 0
         y: 0
-        width: 63
-        height: 55
+        width: 64
+        height: 57
       spriteId: 892dcaae57a73474b84edf0c0b997df4
     linkedCells: []
     parentIndex: -1

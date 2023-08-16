@@ -6704,7 +6704,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoints:
   - {fileID: 1681329892}
-  target: {fileID: 317374893}
   bossSpawnPoint: {fileID: 1365923321}
   waves:
   - name: 
@@ -6760,7 +6759,7 @@ GameObject:
   - component: {fileID: 1959230962}
   m_Layer: 0
   m_Name: barn
-  m_TagString: Untagged
+  m_TagString: Farm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
