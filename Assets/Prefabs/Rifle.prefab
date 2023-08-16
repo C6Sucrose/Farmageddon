@@ -96,7 +96,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 281113186214445647}
   bulletSpeed: 5
   aimSpeed: 10
-  fireRate: 0.1
+  fireRate: 1
   nextFireTime: 0
   minRotation: -90
   maxRotation: 90
@@ -167,7 +167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLimited: 0
-  refillTime: 2
-  maxAmmo: 6
+  refillTime: 1.25
+  maxAmmo: 2
+  fullRefill: 0
   currentRefillTime: 0
   currentAmmo: 0

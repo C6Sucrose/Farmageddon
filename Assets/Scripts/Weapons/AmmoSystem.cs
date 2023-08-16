@@ -8,6 +8,7 @@ public class AmmoSystem : MonoBehaviour
     public bool isLimited = true;    // Flag to control whether ammo is limited or unlimited
     public float refillTime = 5f;    // The time it takes for the ammo to refill completely
     public int maxAmmo = 10;         // The maximum amount of ammo
+    public bool fullRefill;
 
     public float currentRefillTime; // The current time for ammo refill
     public int currentAmmo;         // The current ammo count
@@ -29,12 +30,19 @@ public class AmmoSystem : MonoBehaviour
     public void Update()
     {
         
+        
         if (!isLimited && currentAmmo < maxAmmo)
         {
             currentRefillTime -= Time.deltaTime;
             Debug.Log(currentRefillTime);
             if (currentRefillTime <= 0f)
             {
+                if(fullRefill == true){
+                    currentAmmo = maxAmmo;
+                    Debug.Log("Ammo:" + currentAmmo);
+                    currentRefillTime = refillTime;
+                    return;
+                }
                 currentAmmo++;
                 Debug.Log("Ammo:" + currentAmmo);
                 currentRefillTime = refillTime;

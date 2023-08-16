@@ -167,7 +167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLimited: 0
-  refillTime: 2
+  refillTime: 1
   maxAmmo: 5
+  fullRefill: 0
   currentRefillTime: 0
   currentAmmo: 0
