@@ -11,12 +11,17 @@ public class farm : MonoBehaviour
    // public int hogdamage = 50;
     private Rigidbody2D rb;
     public corn Bar;
+    public HealthBar healthBar;
+
+    public float damageRate = 1f;                                      // Rate at which the farm should take damage
+    private float nextDamage;
   
 
     void Start()
     {
         currentHealth = totalHealth;
         rb = GetComponent<Rigidbody2D>();
+        healthBar.SetMaxHealth(totalHealth);
 
     }
 
@@ -34,6 +39,7 @@ public class farm : MonoBehaviour
     {
 
         currentHealth -= damageAmount;
+        healthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
@@ -43,7 +49,7 @@ public class farm : MonoBehaviour
        
         //transform.position = new Vector2(transform.position.x - 1f, transform.position.y);
         //bar Bar = other.GetComponent<bar>();
-         Bar.decreasescale();
+       //  Bar.decreasescale();
     }
 
     // Handle enemy death logic here
@@ -63,10 +69,16 @@ public class farm : MonoBehaviour
             Debug.Log("Hit");
             // Get the bullet component from the other object
             Hog hog = other.GetComponent<Hog>();
-
-            // Damage the hog based on the bullet's damage value
-            TakeDamage(hog.hogdamage);
+            if (nextDamage < Time.time)
+            {
+                // Damage the hog based on the bullet's damage value
+                TakeDamage(hog.hogdamage);
+                nextDamage = Time.time + damageRate;
+            }
             
+
+            hog.transform.position = hog.transform.position - new Vector3(-0.25f, 0, 0);
+
         }
         //else if (other.CompareTag("Aoe"))                           // Check if collider is triggered by an area of effect attack
         //{
