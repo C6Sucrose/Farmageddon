@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Upgrade_Menu.unity
     guid: 52572275e7ca047439ac1c167e4690f9
+  - enabled: 1
+    path: Assets/Scenes/losescreen.unity
+    guid: b4a81524c72d6844ea599a4c61345962
+  - enabled: 1
+    path: Assets/Scenes/killjoe.unity
+    guid: 07c8c49094023594c8854a1db82fb641
   m_configObjects: {}
