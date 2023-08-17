@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
-
+using UnityEngine.SceneManagement;
 public class farm : MonoBehaviour
 {
+    public static int index; 
     // Start is called before the first frame update
     public int totalHealth = 100;
     public int currentHealth;
    // public int hogdamage = 50;
     private Rigidbody2D rb;
     public corn Bar;
-  
-
+   //public losescreen index;
     void Start()
     {
+        index = SceneManager.GetActiveScene().buildIndex;
         currentHealth = totalHealth;
         rb = GetComponent<Rigidbody2D>();
 
@@ -51,6 +52,11 @@ public class farm : MonoBehaviour
     {
 
         Destroy(gameObject);
+        //int ind = SceneManager.GetActiveScene().buildIndex;
+        //index.GoToPreviousScene(ind);
+      //  SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("losescreen");
+        Debug.Log("losescreen loaded");
     }
 
 
