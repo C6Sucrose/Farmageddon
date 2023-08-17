@@ -29,6 +29,7 @@ public class UpgradeScene : MonoBehaviour
             weapon1UpgradeLevel = 0;
 
         }
+        
         currentIndex = weapon1UpgradeLevel;
         weapon2UpgradeLevel = weapon1UpgradeLevel;
         spriteObject = new GameObject();

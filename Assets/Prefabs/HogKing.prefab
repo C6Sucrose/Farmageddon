@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 6077491181002860114}
   - component: {fileID: 2627269911479751312}
   - component: {fileID: 3322260663545259018}
-  - component: {fileID: 1062029664757587681}
-  - component: {fileID: 8583302898812826672}
+  - component: {fileID: 9123016839064386564}
   m_Layer: 0
   m_Name: HogKing
   m_TagString: Enemy
@@ -31,12 +30,12 @@ Transform:
   m_GameObject: {fileID: 2384358074409316860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.78, y: -2.81, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1116840646513370272}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4508009457397009806
 SpriteRenderer:
@@ -164,27 +163,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe8019dbdad45cb40bbf632b76f7aa63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalHealth: 500
+  totalHealth: 2000
   currentHealth: 0
   hogdamage: 50
---- !u!114 &1062029664757587681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2384358074409316860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5ac6aac4fadac34583a6d098090f7dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Prefab: {fileID: 6653086610122017652, guid: 3474729d10bca11429a50566ec6c88cf, type: 3}
-  spawnInterval: 1
-  spawnCount: 10
-  spawnDuration: 10
-  targetTransform: {fileID: 0}
---- !u!114 &8583302898812826672
+--- !u!114 &9123016839064386564
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -206,6 +188,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1116840646513370272}
+  - component: {fileID: 7317524806545537195}
+  - component: {fileID: 3824580239456190218}
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: Untagged
@@ -221,10 +205,38 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3662549725131244769}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: 0}
+  m_LocalPosition: {x: 4, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 466921123981196469}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7317524806545537195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3662549725131244769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473445e9fa457424c89fb36ebdc953cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 6727179918839903245, guid: 9dbca33a6321185458f48c34723eef7a, type: 3}
+  spawnRate: 30
+--- !u!114 &3824580239456190218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3662549725131244769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473445e9fa457424c89fb36ebdc953cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 6653086610122017652, guid: 3474729d10bca11429a50566ec6c88cf, type: 3}
+  spawnRate: 5

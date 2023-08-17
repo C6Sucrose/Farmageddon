@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public Transform target;  // The target for the enemy to go towards
+    private Transform target;  // The target for the enemy to go towards
+    public string targetTag = "Farm";
     public float speed = 5f;  // The movement speed of the enemy
+
+
+    void Start()
+    {
+        target = GameObject.FindGameObjectWithTag(targetTag).transform;
+    }
 
     private void Update()
     {

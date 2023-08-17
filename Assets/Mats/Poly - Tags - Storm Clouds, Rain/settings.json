@@ -1,0 +1,22 @@
+{
+  "prompt_text": "Storm Clouds, Rain",
+  "patch": {
+    "ext": "png",
+    "dtype": "uint8",
+    "width": 512,
+    "height": 512,
+    "url": "https://static.withpoly.com/v3-voronoi/textures/patches/299d1229-f2ca-4f06-88b4-6197355130f0.png",
+    "patch_id": "5niy3bxkbK"
+  },
+  "seamless_prompt_text": "Storm Clouds, Rain",
+  "seamless_patch_scale": 0.8,
+  "upscale_prompt_text": "Storm Clouds, Rain",
+  "upscale_resolution": 1024,
+  "is_seamless": true,
+  "pbr_mode": "general",
+  "pbr_generate_color": true,
+  "pbr_generate_normal": true,
+  "pbr_generate_height": true,
+  "pbr_generate_ao": true,
+  "pbr_generate_roughness": true
+}
