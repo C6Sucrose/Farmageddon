@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3598421001974971445}
   - component: {fileID: 3077265323433977265}
   - component: {fileID: 7116415740865801473}
+  - component: {fileID: 7675539929915645278}
   m_Layer: 0
   m_Name: Crow
   m_TagString: Enemy
@@ -184,6 +185,27 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0014657974, y: 0.073176146}
   m_Size: {x: 5.5836487, y: 5.5836487}
   m_Direction: 0
+--- !u!95 &7675539929915645278
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995774570903372082}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 274d5dd1ce0fa154bbfa367eabf4f0e1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4760288801653614140
 GameObject:
   m_ObjectHideFlags: 0
