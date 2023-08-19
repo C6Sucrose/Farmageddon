@@ -71,10 +71,10 @@ public class farm : MonoBehaviour
         //int ind = SceneManager.GetActiveScene().buildIndex;
         //index.GoToPreviousScene(ind);
       //  SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        SceneManager.LoadScene("losescreen");
+      //  SceneManager.LoadScene("losescreen");
         Debug.Log("losescreen loaded");
 
-        SceneManager.LoadScene("Lose");
+        SceneManager.LoadScene("losescreen");
 
 
     }
