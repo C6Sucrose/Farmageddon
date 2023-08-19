@@ -636,7 +636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalLevels: 3
-  levelsUnlocked: 2
+  levelsUnlocked: 3
   nextButton: {fileID: 586240196}
   prevButton: {fileID: 869997662}
 --- !u!1 &586240196
@@ -812,7 +812,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -195932069
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1fec4f2e620ca1f4f998c10c3746efd5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -978,7 +978,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -195932069
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1ce0be94921358f4e85a08a81782fcb7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1091,7 +1091,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -195932069
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2f1123ab9ff4de14e9c0452377d9058d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1593,7 +1593,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -195932069
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3d6714cb85f76764da4f81bc710abcae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
