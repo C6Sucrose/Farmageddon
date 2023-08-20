@@ -7120,9 +7120,53 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 706945475048655757, guid: b6f1a2528c555b44c9f0b77e99dab556, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 706945475048655757, guid: b6f1a2528c555b44c9f0b77e99dab556, type: 3}
+      propertyPath: VelocityModule.x.minScalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 706945475048655757, guid: b6f1a2528c555b44c9f0b77e99dab556, type: 3}
+      propertyPath: VelocityModule.y.minScalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706945475048655757, guid: b6f1a2528c555b44c9f0b77e99dab556, type: 3}
+      propertyPath: VelocityModule.orbitalY.minScalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 706945475048655757, guid: b6f1a2528c555b44c9f0b77e99dab556, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 706945475048655757, guid: b6f1a2528c555b44c9f0b77e99dab556, type: 3}
+      propertyPath: VelocityModule.speedModifier.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 706945475048655757, guid: b6f1a2528c555b44c9f0b77e99dab556, type: 3}
+      propertyPath: ClampVelocityModule.magnitude.scalar
+      value: 1.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 706945475048655757, guid: b6f1a2528c555b44c9f0b77e99dab556, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime0
+      value: 31997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2005943895774217049, guid: b6f1a2528c555b44c9f0b77e99dab556, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6729827522555777964, guid: b6f1a2528c555b44c9f0b77e99dab556, type: 3}
       propertyPath: m_Name
       value: Weather System
+      objectReference: {fileID: 0}
+    - target: {fileID: 7398174694587871052, guid: b6f1a2528c555b44c9f0b77e99dab556, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961547570957180247, guid: b6f1a2528c555b44c9f0b77e99dab556, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8501500991307290821, guid: b6f1a2528c555b44c9f0b77e99dab556, type: 3}
       propertyPath: m_RootOrder
