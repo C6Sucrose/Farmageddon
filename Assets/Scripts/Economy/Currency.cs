@@ -9,6 +9,7 @@ public class CurrencyHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //PlayerPrefs.DeleteKey("Currency");
         if(PlayerPrefs.HasKey("Currency")){//if currency exists
             currentCurrency = PlayerPrefs.GetInt("Currency");
         }
