@@ -14,8 +14,11 @@ public class WeaponController : MonoBehaviour
     public float maxRotation = 135f;
     public variables_script variables;
     public AmmoSystem ammoSystem;
-
-
+    Vector2 mousePosition;
+    Vector2 direction;
+    float angle;
+    Animator animation;
+    bool reload_3 = true;
 
 
 
@@ -24,13 +27,38 @@ public class WeaponController : MonoBehaviour
 
     public void Start()
     {
+
         
+            if(fireRate != 0.5f){
+            animation = GetComponent<Animator>();
+            }
+
+            // Get the mouse position
+            mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            // Get the direction from the rifle to the mouse
+             direction = mousePosition - (Vector2)transform.position;
+
+            // Calculate the angle from the direction
+            angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
     }
 
 
     public void Update()
     {
-        if (Input.GetButtonDown("Fire1") && Time.time >= nextFireTime  && (ammoSystem.currentAmmo > 0))
+        //for rifle_3 reload
+        if(ammoSystem.currentAmmo == 0 && reload_3 == false && ammoSystem.maxAmmo == 20 && fireRate != 0.5f){
+            animation.SetTrigger("rifle_3_reload");
+            reload_3 = true;
+        }
+        //fire only for NukeWeapon
+        if(Input.GetButtonUp("Fire1") && Time.time >= nextFireTime  && (ammoSystem.currentAmmo > 0) && fireRate == 0.5f)
+        {
+            Fire();
+        }
+
+        //Fire for all the other weapons
+        if (Input.GetButtonUp("Fire1") && Time.time >= nextFireTime  && (ammoSystem.currentAmmo > 0) && angle >= minRotation && angle <= maxRotation)
         {
             Fire();
 
@@ -39,13 +67,13 @@ public class WeaponController : MonoBehaviour
         
 
             // Get the mouse position
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             // Get the direction from the rifle to the mouse
-            Vector2 direction = mousePosition - (Vector2)transform.position;
+            direction = mousePosition - (Vector2)transform.position;
 
             // Calculate the angle from the direction
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
        
             if(angle >= minRotation && angle <= maxRotation)
@@ -64,6 +92,12 @@ public class WeaponController : MonoBehaviour
         ammoSystem.UseAmmo();
         // Instantiate a bullet at the rifle's position
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+
+        //play reload animation
+        if(fireRate != 0.5f){
+        animation.SetTrigger("reload");
+        reload_3 = false;
+        }
     }
 
 
