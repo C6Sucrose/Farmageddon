@@ -10,13 +10,26 @@ public class Hog : MonoBehaviour
     public int hogdamage = 50;
     private Rigidbody2D rb;
 
+    Animator animation;
+    
+    
+
+
     public HealthBar healthBar;
+
 
     void Start()
     {
         currentHealth = totalHealth;
         rb = GetComponent<Rigidbody2D>();
+
+        
+        animation = GetComponent<Animator>();
+        
+        
+
         healthBar.SetMaxHealth(totalHealth);
+
     }
 
     void Update()
@@ -37,6 +50,7 @@ public class Hog : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            
             Die();
         }
     }
@@ -44,9 +58,20 @@ public class Hog : MonoBehaviour
     // Handle enemy death logic here
     void Die()
     {
+        if(animation != null){
+        animation.SetTrigger("death");
+        Destroy(gameObject, animation.GetCurrentAnimatorStateInfo(0).length);
+        }
+        else{
+            Destroy(gameObject);
+        }
         
-        Destroy(gameObject);
+        
     }
+    
+
+
+
 
 
     //check if the hog is hit
