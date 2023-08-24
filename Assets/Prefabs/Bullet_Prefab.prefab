@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 7807549881948393373}
   - component: {fileID: -4969086041636609376}
   - component: {fileID: 391977115684031556}
-  - component: {fileID: 1119320096031475684}
+  - component: {fileID: 8738178988633479315}
   m_Layer: 0
   m_Name: Bullet_Prefab
   m_TagString: Bullet
@@ -274,7 +274,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!82 &1119320096031475684
+--- !u!82 &8738178988633479315
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,7 +284,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 858db4d467661634993cc1dec464454d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 62d94621d4822da4f905b397d741f242, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

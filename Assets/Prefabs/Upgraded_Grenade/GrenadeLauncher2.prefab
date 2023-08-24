@@ -151,8 +151,8 @@ MonoBehaviour:
   aimSpeed: 2
   fireRate: 1.5
   nextFireTime: 0
-  minRotation: -90
-  maxRotation: 90
+  minRotation: -60
+  maxRotation: 60
   variables: {fileID: 0}
   ammoSystem: {fileID: -3209607235127856988}
 --- !u!114 &-3209607235127856988
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLimited: 1
   refillTime: 4
-  maxAmmo: 6
+  maxAmmo: 15
   fullRefill: 0
   currentRefillTime: 0
   currentAmmo: 0
