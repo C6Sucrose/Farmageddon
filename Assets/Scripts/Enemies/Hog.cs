@@ -9,27 +9,18 @@ public class Hog : MonoBehaviour
     public int currentHealth;
     public int hogdamage = 50;
     private Rigidbody2D rb;
-
     Animator animation;
-    
-    
-
-
     public HealthBar healthBar;
-
+    
 
     void Start()
     {
         currentHealth = totalHealth;
         rb = GetComponent<Rigidbody2D>();
-
         
         animation = GetComponent<Animator>();
-        
-        
-
         healthBar.SetMaxHealth(totalHealth);
-
+        
     }
 
     void Update()
@@ -47,7 +38,7 @@ public class Hog : MonoBehaviour
 
         currentHealth -= damageAmount;
         healthBar.SetHealth(currentHealth);
-
+        
         if (currentHealth <= 0)
         {
             
