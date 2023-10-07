@@ -15,4 +15,5 @@ where you play as a tough-as-nails farmer standing alone against invading hordes
 This is personal project of mine that I undertook while learning the ins and outs of the Unity game engine. Going through it again, there are things I would've done differently but at the end of the day, I loved working on this!
 
 Contact: csixh2welveosix@proton.me
+
 discord: panzer.of.ze.lake
